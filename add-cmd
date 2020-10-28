@@ -1,0 +1,6 @@
+chmod +x md5-ios md5-android;
+path=$(pwd);
+printf '\nexport PATH="$PATH:%s"' $path >> $1;
+source $1;
+##$1 path to rc file (bash: ~/.bash_profile or ~/.bashrc Z shell ~/.zshrc)
+## Typing echo $SHELL in your Terminal tells you which shell you’re usingpathi
