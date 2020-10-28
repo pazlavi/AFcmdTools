@@ -1,7 +1,25 @@
-for i in $(ls -t *.aar);
+LIST=$(ls -t *.aar);
+END=${#LIST[@]};
+let END++;
+if [ $# -gt 0 ]
+  then 
+	END=$1;
+fi
+
+counter=0;
+
+for i in $LIST;
 do
+if [ $counter -eq $END ]
+	then 
+		exit 0;
+fi
+
+let counter++;
+
 printf "\n$i\nSHA256: ";
 shasum -a 256 $i;
 md5 $i;
+
 done
 
