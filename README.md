@@ -19,5 +19,8 @@ add MD5 shortcut command to your mac
 
 # THE COMMANDS 
 1- add-cmd : add the commands to path 
+
 2- md5-android n : run the commands 'shasum -a 256' and 'md5' on the last n .aar files in descending order. if n not provided the command will be executed on all .aar files in the directory in descending order
+
 3- md5-ios n : run the command 'md5' on the last n .zip files in descending order. if n not provided the command will be executed on all .zip files in the directory in descending order
+
