@@ -8,7 +8,6 @@ add MD5 shortcut command to your mac
 4- close and open the terminal
 5- now you can run the command on every terminal session
 
-
 * path to rc file (bash: ~/.bash_profile or ~/.bashrc Z shell ~/.zshrc)
 * Typing echo $SHELL in your Terminal tells you which shell you’re using
 
