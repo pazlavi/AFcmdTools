@@ -1,0 +1,17 @@
+if [ $# -eq 0 ]
+
+  then 
+	printf "no url provided";
+	exit 1;
+fi
+
+for i in $*
+do
+	f=$(basename $i);
+	
+wget -qo- "$i";
+printf "\n"$f"\nSHA256: ";
+shasum -a 256 $f;
+md5 $f;
+
+done
