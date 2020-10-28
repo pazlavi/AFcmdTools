@@ -1,6 +1,24 @@
-for i in $(ls -t *.zip);
+LIST=$(ls -t *.zip);
+END=${#LIST[@]};
+let END++;
+if [ $# -gt 0 ]
+  then 
+	END=$1;
+fi
+
+counter=0;
+
+for i in $LIST;
 do
+if [ $counter -eq $END ]
+	then 
+		exit 0;
+fi
+
+let counter++;
+
 printf "\n$i:\n"
 md5 $i;
+
 done
 
