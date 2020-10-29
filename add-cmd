@@ -1,4 +1,4 @@
-chmod +x md5-ios md5-android md5-android-url;
+chmod +x md5-ios md5-android md5-ios-url md5-android-url;
 path=$(pwd);
 printf "add commands to the path\n";
 printf '\nexport PATH="$PATH:%s"' $path >> $1;

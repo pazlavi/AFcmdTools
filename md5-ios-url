@@ -1,0 +1,16 @@
+if [ $# -eq 0 ]
+
+  then 
+	printf "no url provided";
+	exit 1;
+fi
+
+for i in $*
+do
+	f=$(basename $i);
+	
+wget -qo- "$i";
+printf "\n"$f"\n";
+md5 $f;
+
+done
