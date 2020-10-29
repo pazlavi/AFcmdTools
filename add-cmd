@@ -1,6 +1,9 @@
-chmod +x md5-ios md5-android;
+chmod +x md5-ios md5-android md5-android-url;
 path=$(pwd);
+printf "add commands to the path\n";
 printf '\nexport PATH="$PATH:%s"' $path >> $1;
 source $1;
+printf "installing wget dependency\n";
+brew install wget;
 ##$1 path to rc file (bash: ~/.bash_profile or ~/.bashrc Z shell ~/.zshrc)
 ## Typing echo $SHELL in your Terminal tells you which shell you’re usingpathi
