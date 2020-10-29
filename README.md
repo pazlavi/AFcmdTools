@@ -24,3 +24,7 @@ add MD5 shortcut command to your mac
 
 3- md5-ios n : run the command 'md5' on the last n .zip files in descending order. if n not provided the command will be executed on all .zip files in the directory in descending order
 
+4- md5-android-url {url1} {url2} ... : run the commands 'shasum -a 256' and 'md5' on files that will be downloaded from supplied URLs. please provide a direct download URL
+
+5- md5-android-url {url1} {url2} ... : run the command 'md5' on files that will be downloaded from supplied URLs. please provide a direct download URL
+
