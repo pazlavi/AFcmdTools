@@ -13,5 +13,7 @@ wget -qo- "$i";
 printf "\n"$f"\nSHA256: ";
 shasum -a 256 $f;
 md5 $f;
+rm $f;
+
 
 done

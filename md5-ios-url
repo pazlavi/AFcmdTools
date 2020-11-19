@@ -12,5 +12,5 @@ do
 wget -qo- "$i";
 printf "\n"$f"\n";
 md5 $f;
-
+rm $f;
 done
