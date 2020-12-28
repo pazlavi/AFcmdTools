@@ -1,4 +1,5 @@
 chmod +x aflogs md5-ios md5-android md5-ios-url md5-android-url;
+cat afLogFilter.py >> /usr/local/bin/afLogFilter.py
 path=$(pwd);
 printf "add commands to the path\n";
 printf '\nexport PATH="$PATH:%s"' $path >> $1;
