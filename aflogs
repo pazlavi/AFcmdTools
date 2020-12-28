@@ -1,1 +1,1 @@
-python afLogFilter.py "$@"
+python /usr/local/bin/afLogFilter.py "$@"
