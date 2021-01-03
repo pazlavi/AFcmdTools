@@ -43,7 +43,7 @@ Add MD5 shortcuts and AppsFlyer logs filter commands to your mac terminal
 *  `md5-ios n` 
  run the command 'md5' on the last n .zip files in descending order. if n not provided the command will be executed on all .zip files in the directory in descending order
 
-* `md5-android-url {url1} {url2} ...` 
+* `md5-ios-url {url1} {url2} ...` 
 run the command 'md5' on files that will be downloaded from supplied URLs. please provide a direct download URL
 
 #### AppsFlyer Logs Filter
